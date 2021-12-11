@@ -28,7 +28,7 @@ These sections are :
 * It is important to note :
   - the <b>file created</b> is still a <b>text file</b> and the 1's and 0's are <b>stored as characters</b>(text) in a string and <b>not as integers</b>/numbers/bin
   - The size of the output file is truncated if it is larger than the size specified. Example : If size of input file after conversion is 4000 but size specified is 200, then only the first 200 characters of the input file are written to the new file.
-* Two such files are compared with the number of the different characters being the output.
+* Two such files are compared with the number of different characters being the output.
 
 #### Main Function
 * <i>DON'T</i> delete this section in the code.
