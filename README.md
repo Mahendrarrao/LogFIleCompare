@@ -39,3 +39,4 @@ These sections are :
 #### Optional Section
 * This section has been commented out as it slows down the program.
 * Gives better clarity for finding which of the different characters in the original logs are mismatched.
+* If required to be used, remember to uncomment and properly indent this section. It is an extension of the main block and should be indented accordingly.
