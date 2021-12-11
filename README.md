@@ -1,7 +1,6 @@
 ### RUNNING THE PROGRAM
 
 #### Requirements:
-
 Python 3 [ https://www.python.org/downloads/]
 
 #### How to run the file:
