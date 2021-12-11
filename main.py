@@ -71,7 +71,7 @@ def mismatch(file1, file2):
 # reads contents of file and stores it in a string (mismatch1, mismatch2)
 # compare both strings (of equal length) containing 1's and 0's
 # increment counter variable (mismatch) for every difference in characters
-#output : print counter variable (print(mismatch))
+#output : return counter variable (mismatch)
     iter = 0
     mismatch = 0
     bit1 = open(file1,'r')
