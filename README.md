@@ -10,7 +10,7 @@ Python 3 [ https://www.python.org/downloads/]
 * Refer the code comments under <b>Main Section</b> if changing the names of one or both files to be checked.
 * Open terminal/cmd
 * Navigate to the directory having the two files and main.py :
-        $ python3 main.py
+          $ python3 main.py
 
 ### UNDERSTANDING THE CODE
 <b>main.py</b> is divided into 4 sections. The comments on the code help to identify each of these sections, their inputs and outputs, and how they work.
