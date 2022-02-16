@@ -10,6 +10,16 @@ Python 3 [ https://www.python.org/downloads/]
 - Navigate to the directory having the two files and main.py :
 
           $ python3 main.py
+#####  Update:
+- pip is a python package that needs to be installed so that we can import and run the matplotlib python library. Follow the below steps to install pip and the matplotlib python library:
+  - Verify if pip is installed in your system with the following command:
+          $ pip --version
+  - If pip is not installed, you will get an output saying <i>'pip' is not recognized</i>. There's enough resources online to help you install the latest version of pip. If you don't have the time, You can run the get-pip.py file with this command (This is not preferred since the file is not the latest version):
+
+          $ python get-pip.py
+  - Once pip is installed and verified, run the below command to install the library for the graphs and plots:
+
+          $ pip install matplotlib
 
 ### UNDERSTANDING THE CODE
 <b>main.py</b> is divided into 4 sections. The comments on the code help to identify each of these sections, their inputs and outputs, and how they work.
