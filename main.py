@@ -1,3 +1,7 @@
+
+import matplotlib.pyplot as plt
+import numpy as np
+import sys
 #--------------------------------NON-ESSENTIAL FUNCTIONS---------------------------#
 
 #1
@@ -58,10 +62,22 @@ def ascii_to_binary(file, size) -> str:
     asc2bi = ''.join(format(ord(i), '08b') for i in fp)
     bin_file = 'bin_' + file
     t1 = open(bin_file, 'w')
+    # declaration of array named graph of length [size]
+    graph = []
     for count in range(0,size):
         t1.write(asc2bi[count])
+        #for loop ensures number of elements appended to graph is no greater than size
+        graph.append(asc2bi[count])
     t1.close()
     filename.close()
+    # stem graph function
+    plt.xlabel('Bit Index')
+    plt.ylabel('Binary Value')
+    plt.suptitle(bin_file)
+    x=range(0,size)
+    plt.stem(x, graph)
+    plt.ylim(0, 1)
+    plt.show()
     return bin_file
 
 #4
@@ -73,7 +89,7 @@ def mismatch(file1, file2):
 # increment counter variable (mismatch) for every difference in characters
 #output : return counter variable (mismatch)
     iter = 0
-    mismatch = 0
+    mismatch = []
     bit1 = open(file1,'r')
     bit2 = open(file2,'r')
     mismatch1 = bit1.read()
@@ -81,8 +97,18 @@ def mismatch(file1, file2):
     if len(mismatch1) == len(mismatch2):
         for iter in range(0, len(mismatch1)):
             if(mismatch1[iter] != mismatch2[iter]):
-                mismatch += 1
-    return mismatch
+                mismatch.append(1)
+            else:
+                mismatch.append(0)
+    # stem graph function
+    plt.xlabel('Bit Index')
+    plt.ylabel('Errenous bits')
+    plt.suptitle('Number of Mismatched bits')
+    x=range(0,len(mismatch))
+    plt.stem(x, mismatch)
+    plt.ylim(0, 1)
+    plt.show()
+    return sum(mismatch)
 
 #-------------------------------END OF FUNCTIONS SECTION-----------------------#
 #
