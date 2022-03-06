@@ -31,7 +31,7 @@ These sections are :
 * A file containing <b>binary</b> characters is converted <b>to text</b> and <b>written to a file</b>
 * Two such text files are compared with their differences being the output.
 
-#### Essential Functions
+#### Essential functions
 * <i>DON'T</i> delete this section in the code.
 * A file containing <b>ASCII text</b> is converted <b>to binary</b> characters and <b>written to a file</b>
 * It is important to note :
@@ -43,9 +43,15 @@ These sections are :
 * <i>DON'T</i> delete this section in the code.
 * Takes the filenames as strings for input.
 * Calls the essential functions to process the files
-* Outputs the number of mismatched bits.
+* Outputs the number of mismatched bits in numerical and graphical form.
 
 #### Optional Section
 * This section has been commented out as it slows down the program.
 * Gives better clarity for finding which of the different characters in the original logs are mismatched.
 * If required to be used, remember to uncomment and properly indent this section. It is an extension of the main block and should be indented accordingly.
+
+##### Optional features
+* [Non-Essential functions](https://github.com/Mahendrarrao/LogFIleCompare#non-essential-functions)
+* Graphing function in Essential functions -> ascii_to_binary (Lines 74-81/man.py)
+  - This section has been commented out since it is CPU intensive and inefficient for comparing 1000000+ bits.
+  - Uncomment this section for cases where smaller number of bits are to be compared and open the .svg file in a browser for best results.
