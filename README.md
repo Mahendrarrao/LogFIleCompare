@@ -1,4 +1,28 @@
-### RUNNING THE PROGRAM
+# File content mismatch checker and plotter
+
+## What does it do?
+Python code to compare two text files, convert them to binary bits and compare the number of bits mismatched between them while specifying the total number of bits from the start that are to be compared.
+
+<b>Input</b> :  
+
+        * <input filename 1>.log
+        * <input filename 2>.log
+        * Number of bits compared (NOBC)
+
+- Input two text files of .log format
+- Input total number of bits to be compared between the two files.
+
+<b>Action</b> :
+- Converts the text content to 1 and 0 binary bits.
+- Entire file contents are converted but the resulting binary files generated for both files will have the NOBC bits written to them.
+- The binary files which are of equal length are compared and the number of mismatched bits are tracked.
+
+<b>Output</b> :
+
+        * Total number of mismatched bits
+        * Line graph of occurence of mismatched bits across NOBC bits.
+
+### Running the program
 
 #### Requirements:
 Python 3 [ https://www.python.org/downloads/]
@@ -21,7 +45,7 @@ Python 3 [ https://www.python.org/downloads/]
 
           $ pip install matplotlib
 
-### UNDERSTANDING THE CODE
+### Understanding the code
 <b>main.py</b> is divided into 4 sections. The comments on the code help to identify each of these sections, their inputs and outputs, and how they work.
 These sections are :
 
