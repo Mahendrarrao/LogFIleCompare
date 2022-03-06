@@ -70,14 +70,15 @@ def ascii_to_binary(file, size) -> str:
         graph.append(asc2bi[count])
     t1.close()
     filename.close()
-    # stem graph function
-    plt.xlabel('Bit Index')
-    plt.ylabel('Binary Value')
-    plt.suptitle(bin_file)
-    x=range(0,size)
-    plt.stem(x, graph)
-    plt.ylim(0, 1)
-    plt.show()
+    # # stem graph function
+    # plt.xlabel('Bit Index')
+    # plt.ylabel('Binary Value')
+    # plt.suptitle(bin_file)
+    # x=range(0,size)
+    # plt.stem(x, graph)
+    # plt.ylim(0, 1)
+    # imagefile = bin_file + '.svg'
+    # plt.savefig(imagefile)
     return bin_file
 
 #4
@@ -105,7 +106,7 @@ def mismatch(file1, file2):
     plt.ylabel('Errenous bits')
     plt.suptitle('Number of Mismatched bits')
     x=range(0,len(mismatch))
-    plt.stem(x, mismatch)
+    plt.stem(x, mismatch, 'red')
     plt.ylim(0, 1)
     plt.show()
     return sum(mismatch)
@@ -125,8 +126,8 @@ if __name__ == "__main__":
 # Call function #3 : Create text files of size (size) in .log format
 # Call function #4 : Compare the files and store the number of mismatched bits as an integer (mismatchedBits)
 #output: print number of mismatched bits (print(mismatchedBits))
-    inputFile = 'Correct_Zynq.log'
-    outputFile = 'Corrupt_Correct_Zynq.log'
+    inputFile = 'atten0.log'
+    outputFile = 'atten10.log'
     s = input("\n\nEnter size of file in number of bits\n")
     size = int(s)
     binFile1 = ascii_to_binary(inputFile, size)
