@@ -26,7 +26,7 @@ Python 3 [ https://www.python.org/downloads/]
 These sections are :
 
 #### Non-Essential functions
-* They are used in the optional section of the code.
+* They are used in the [Optional Section](https://github.com/Mahendrarrao/LogFIleCompare#optional-section) of the code.
 * You can safely delete this section from <b>main.py</b> for the output.
 * A file containing <b>binary</b> characters is converted <b>to text</b> and <b>written to a file</b>
 * Two such text files are compared with their differences being the output.
