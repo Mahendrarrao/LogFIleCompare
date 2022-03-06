@@ -52,6 +52,6 @@ These sections are :
 
 ##### Optional features
 * [Non-Essential functions](https://github.com/Mahendrarrao/LogFIleCompare#non-essential-functions)
-* Graphing function in Essential functions -> ascii_to_binary (Lines 74-81/man.py)
+* Graphing function in Essential functions -> ascii_to_binary (Lines 74-81/main.py)
   - This section has been commented out since it is CPU intensive and inefficient for comparing 1000000+ bits.
   - Uncomment this section for cases where smaller number of bits are to be compared and open the .svg file in a browser for best results.
